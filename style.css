@@ -1,0 +1,53 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+h2{
+    text-align:center;
+}
+p{
+    background-color:aliceblue;
+    color:darkslategrey;
+    padding: 10px;
+    text-align: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius:60px;
+    position: relative;
+    margin: -170px 200px 0px 10px;
+    animation:yash 4s ease-in 0s 1 reverse;
+
+}
+
+@keyframes yash{
+    0%{
+        background-color: red; left: 0px; top:0px;
+        border: 4px solid yellow;
+    }
+    25%{
+        background-color:yellow; left:200px;top:0px;
+        border: 4px solid red;
+    }
+    50%{
+        background-color:blue;left:200px;top:200px;
+        border: 4px solid green;
+    }
+    75%{
+        background-color:green;left:0px; top:200px;
+        border: 4px solid blue;
+    }
+    100%{
+        background-color: red; left: 0px; top:0px;
+    }
+}
